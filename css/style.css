@@ -1,3 +1,6 @@
+.page {
+  overflow-x: hidden; }
+
 .head-wp {
   width: 100%;
   position: relative; }
