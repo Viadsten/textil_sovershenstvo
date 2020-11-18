@@ -1,16 +1,12 @@
-@import "blocks/navigation.scss";
-@import "variables.scss";
-@import "blocks/statistic.scss";
-@import "blocks/advantages.scss";
-@import "blocks/news.scss";
-@import "blocks/review.scss";
+@import "blocks/1.scss";
+
 
 
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'PT Sans Narrow';
+  font-family: 'Roboto';
 }
 
 .page{
