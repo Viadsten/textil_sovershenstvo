@@ -1,6 +1,7 @@
 
 .page{
   overflow-x: hidden;
+  background-color: #313131;
 }
 .head-wp{
   width: 100%;
@@ -39,11 +40,11 @@
 
 .hello__h2{
   text-transform: uppercase;
-  color: rgba(23, 30, 38, 0.95);
+  color: #fff;
   text-align: left;
   font-weight: 400;
   margin: 42px 0;
-  font-size: 27px;
+  font-size: 25px;
   font-family: 'Roboto';
 }
 
@@ -70,7 +71,7 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  color: #2F3C4B;
+  color: #fff;
   margin: 50px 0;
 }
 .hello__list{
@@ -116,6 +117,9 @@
   .hello__content-wrp{
       display: flex;
       justify-content: space-between;
+      margin-top: 60px;
+      margin-bottom: 60px;
+
   }
 
   .hello__photo-wrp{
@@ -146,7 +150,7 @@
 .youtube{
   width: 300px;
   height: 200px;
-  margin: 40px auto;
+  margin: 60px auto;
   display: block;
 }
 @media(min-width:700px){
@@ -169,9 +173,11 @@
   margin: 40px auto;
   max-width: 450px;
   height: auto;
+  display: block;
+  background-color: #fff;
   text-align: center;
-  box-shadow: 0 0 10px 1px rgb(231, 231, 231);
-  border-radius: 5px;
+  //box-shadow: 0 0 10px 1px rgb(231, 231, 231);
+  border-radius: 0px;
 }
 
 .SPB__img{
@@ -197,8 +203,9 @@
 
 @media (min-width:550px){
   .hello__h2{
-      font-size: 39px;
+      font-size: 29px;
       margin: 20px 0;
+      color: #fff;
   }
   .hello__h2--new{
       margin: 0px 0 10px;
@@ -219,9 +226,13 @@
 
 @media (min-width:950px){
   .SPB__card{
+    margin-right: auto;
+    margin-left: auto;
       width: 24%;
+      margin: 5px auto;
   }
   .SPB__card-wrp{
+    margin: 60px auto;
       padding: 0 10px;
   }
 }
@@ -253,7 +264,7 @@
   text-align: center;
   line-height: 40px;
   font-weight: 300;
-  font-size: 33px;
+  font-size: 28px;
   letter-spacing: 0.05em;
   color: #fff;
   transform: translate(-50%, -50%);
@@ -262,7 +273,7 @@
 @media (min-width:460px){
   .wallpaper{
       max-width: 1080px;
-      margin: 0 auto;
+      margin: 60px auto 0;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -299,18 +310,25 @@
 
 .btn{
   width: 110px;
-  height: 35px;
   text-align: center;
   border-radius: 5px;
   font-size: 16px;
   border: 1px solid rgb(240, 240, 240);
   background-color: white;
   cursor: pointer;
+  max-width: 185px;
+  height: 36px;
+  transition: 0.2s;
+  border: 1px solid #a68e6a;
+  background-color: #f8f8f8;
+  min-width: 120px;
+  color: #a0784b;
+  text-transform: uppercase;
 }
 
 .btn:hover{
-  box-shadow: 0 5px 15px rgba(0,0,0,.08);
-  border-color: #000;
+  background-color: #a0784b;
+  color: #fff;
 }
 
 .btn:active{
@@ -322,6 +340,7 @@
   width: 140px;
   margin: 30px auto;
   display: block;
+  margin-bottom: 60px;
 }
 
 
@@ -353,12 +372,14 @@
 
 .gift{
   width: 100%;
-  height: 570px;
+  height: 500px;
   max-width: 1080px;
   margin: 0 auto;
+  margin-bottom: 60px;
   background-color: rgb(133, 32, 32);
   background-image: url('../img/gift-bg.jpg');
   background-repeat: no-repeat;
+  background-position: bottom;
   background-size: cover;
 }
 
@@ -370,7 +391,7 @@
 .gift__descr{
   line-height: 30px;
   font-size: 23px;
-  padding: 50px 0;
+  padding: 42px 0;
   width: 100%;
   text-transform: uppercase;
   color: rgba(255,255,255,.75);
@@ -463,9 +484,8 @@
 }
 
 .price__card{
+  background-color: #fff;
   width: 90%;
-  box-shadow: 0 5px 15px rgba(0,0,0,.08);
-  border-radius: 5px;
   margin: 5px auto;
   padding-bottom: 25px;
 }
@@ -517,6 +537,8 @@
       padding: 0 10px;
   }
   .price__card{
+    margin: 0px;
+
       width: 32%;
   }
 }
@@ -525,11 +547,16 @@
   .price{
       max-width: 1080px;
       margin: 40px auto;
-      padding: 0 20px;
+      padding: 0 0px;
   }
   .price__card{
-      width: 24%;
+      width: 25%;
   }
+  .SPB__card-wrp--price{
+    margin-bottom: -60px;
+  }
+
+
 }
 
 
@@ -564,23 +591,63 @@
 
 }
 
+.hello__h2--partners{
+  text-align: center;
+}
+
+.brand__text{
+  text-align: center;
+  color: #fff;
+  margin-top: -40px;
+  margin-bottom: 60px;
+}
+
 
 @media(min-width:900px){
   .brand{
     display: flex;
-    align-items: center;
+    align-items: flex-start;
+  }
+  .brand_1{
+    padding: 40px 0;
+    background-color: #fff;
+    width: 73%;
   }
   .brand_2{
     display: block;
-    width: 29%;
+    width: 32%;
     height: 100%;
-    img{
-      margin-top: 30px;
-    }
+
+  }
+
+  .hello__h2--partners{
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 80px;
+    margin-bottom: -80px;
+    color: #313131;
+    z-index: 10;
+    position: relative;
+  }
+
+  .brand__text{
+    text-align: center;
+    color: #313131;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: -80px;
+    margin-bottom: 100px;
   }
 }
 
+@media(min-width:1080px){
+  .hello__h2--partners, .brand__text {
+    margin-left: calc(50vw -  520px);
+    display: block;
+    width: 480px;
+  }
 
+}
 .instagram-link{
   width: 90%;
   margin: 10px auto;
