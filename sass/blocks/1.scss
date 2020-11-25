@@ -34,9 +34,11 @@
 
 
 .hello{
+  background-color: #fff;
   max-width: 1080px;
-  margin: 10px auto 20px;
+  margin: -4px auto 20px;
 }
+
 
 .hello__h2{
   text-transform: uppercase;
@@ -71,8 +73,9 @@
   font-weight: 300;
   font-size: 16px;
   line-height: 22px;
-  color: #fff;
-  margin: 50px 0;
+  color: #313131;
+  margin: 20px 0;
+  white-space: pre-wrap;
 }
 .hello__list{
   width: 90%;
@@ -117,7 +120,8 @@
   .hello__content-wrp{
       display: flex;
       justify-content: space-between;
-      margin-top: 60px;
+      padding-top: 20px;
+      padding-bottom: 10px;
       margin-bottom: 60px;
 
   }
@@ -184,12 +188,27 @@
   width: 100%;
   height: auto;
 }
+.more-text{
+  color: #fff;
+  max-width: 1080px;
+  margin: 10px auto;
+}
+.hello__text--adv{
+  font-size: 17px;
+  margin-bottom: 10px;
+  white-space: pre-wrap;
+  font-weight: 300;
+}
+.hello__text-wrp--adv{
+  margin-top: -20px;
+  margin-bottom: -20px;
+}
 
 .SPB__card-title{
   color: #333;
   font-weight: 300;
-  font-size: 19px;
-  margin: 20px 0;
+  font-size: 17px;
+  margin: 15px 5px;
 }
 .SPB__card{
   text-decoration: none;
@@ -264,7 +283,7 @@
   text-align: center;
   line-height: 40px;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 25px;
   letter-spacing: 0.05em;
   color: #fff;
   transform: translate(-50%, -50%);
@@ -360,7 +379,9 @@
   display: block;
   color: #313131;
   text-decoration: none;
-  line-height: 30px;
+  line-height: 35px;
+  width: 170px;
+  color: #a0784b;
 }
 
 .SPB__card-wrp--black{
@@ -488,6 +509,7 @@
   width: 90%;
   margin: 5px auto;
   padding-bottom: 25px;
+  margin-bottom: 10px;
 }
 
 .price__img{
@@ -527,6 +549,7 @@
 
   .price__card{
     padding-bottom: 25px;
+    margin-bottom: 10px;
 
       width: 45%;
   }
@@ -550,6 +573,8 @@
       padding: 0 0px;
   }
   .price__card{
+    margin-bottom: 10px;
+
       width: 25%;
   }
   .SPB__card-wrp--price{
@@ -593,6 +618,8 @@
 
 .hello__h2--partners{
   text-align: center;
+  font-size: 30px;
+  font-weight: 300;
 }
 
 .brand__text{
@@ -666,5 +693,27 @@
 @media(min-width:950px){
   .instagram-link{
     width: 24%;
+  }
+}
+.hello__h2--black{
+  color: #313131;
+}
+
+
+@media(min-width:700px){
+  .more-btn-text{
+    display: flex;
+    align-items: center;
+    max-width: 1080px;
+    margin: 20px auto 60px;
+    p{
+      margin-right: 20px;
+    }
+  }
+  .more-btn2{
+    margin: 0;
+  }
+  .hello__us{
+    margin-top: 60px;
   }
 }
