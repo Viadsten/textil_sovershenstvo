@@ -192,7 +192,7 @@
   .hello__h2 {
     font-weight: 300;
     font-size: 29px;
-    margin: 20px 0;
+    margin: 70px 0 -30px;
     color: #fff; }
   .hello__h2--new {
     margin: 0px 0 10px;
@@ -233,12 +233,12 @@
 .wallpaper__text {
   position: absolute;
   left: 50%;
+  letter-spacing: -0.03em;
   top: 50%;
   text-align: center;
   line-height: 40px;
   font-weight: 300;
   font-size: 25px;
-  letter-spacing: 0.05em;
   color: #fff;
   transform: translate(-50%, -50%); }
 
@@ -462,7 +462,7 @@
 @media (min-width: 1080px) {
   .price {
     max-width: 1080px;
-    margin: 40px auto;
+    margin: 60px auto;
     padding: 0 0px; }
   .price__card {
     margin-bottom: 10px;
@@ -590,6 +590,10 @@
 .page::-webkit-scrollbar-thumb {
   background: rgba(255, 255, 255, 0.4);
   border-radius: 10px; }
+
+.hello__text--adv span {
+  font-size: 34px;
+  line-height: 17px; }
 
 * {
   margin: 0;
