@@ -160,6 +160,7 @@
 
 .more-text {
   color: #fff;
+  font-weight: 300;
   max-width: 1080px;
   margin: 10px auto; }
 
@@ -189,6 +190,7 @@
 
 @media (min-width: 550px) {
   .hello__h2 {
+    font-weight: 300;
     font-size: 29px;
     margin: 20px 0;
     color: #fff; }
