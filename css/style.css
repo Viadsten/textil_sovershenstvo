@@ -80,7 +80,7 @@
 .hello__photo-wrp img {
   width: 48%;
   margin-bottom: 2%;
-  }
+  height: min-content; }
 
 .hello__text {
   font-weight: 300;
@@ -661,6 +661,20 @@
 .hello__text--adv span {
   font-size: 34px;
   line-height: 17px; }
+
+.categoria-banner img {
+  cursor: zoom-in; }
+
+.categoria-banner {
+  max-width: 1240px;
+  margin: 0 auto; }
+  .categoria-banner img {
+    transition: .3s;
+    width: 100%;
+    max-width: 49%; }
+
+.img-100 {
+  max-width: 100% !important; }
 
 * {
   margin: 0;
