@@ -80,7 +80,7 @@
 .hello__photo-wrp img {
   width: 48%;
   margin-bottom: 2%;
-  height: min-content; }
+  height: 48%; }
 
 .hello__text {
   font-weight: 300;
