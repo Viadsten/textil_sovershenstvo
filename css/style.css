@@ -175,7 +175,11 @@
   .hello__photo-wrp {
     width: 47%; }
   .hello__text-wrp {
-    width: 49%; } }
+    width: 49%; }
+  .hello__text-wrp--adv {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; } }
 
 .you-tube {
   width: 95%;
@@ -320,6 +324,39 @@
     height: auto;
     width: 48%; } }
 
+.instagram-link {
+  position: relative; }
+
+.instagram-link--1:hover .instagram-link--hover, .instagram-link--2:hover .instagram-link--hover, .instagram-link--3:hover .instagram-link--hover, .instagram-link--4:hover .instagram-link--hover {
+  opacity: 1; }
+
+.instagram-link--hover {
+  position: absolute;
+  color: #fff;
+  top: -24px;
+  right: 0;
+  opacity: 0;
+  transition: .2s; }
+
+.categoria-ban-img-wrp {
+  position: relative; }
+  .categoria-ban-img-wrp:hover .categoria-banner-text {
+    opacity: 1; }
+
+.categoria-banner-text {
+  position: absolute;
+  color: #fff;
+  top: -25px;
+  right: 20px;
+  text-transform: uppercase;
+  font-weight: 300;
+  font-size: 22px;
+  transition: .2s;
+  opacity: 0; }
+
+.categoria-banner {
+  margin-top: 75px !important; }
+
 @media (min-width: 720px) {
   .wallpaper {
     justify-content: space-around; }
@@ -327,13 +364,24 @@
     height: auto;
     width: 33%; } }
 
+.price__btn {
+  display: block;
+  width: 170px !important;
+  background-color: #fff !important;
+  color: #313131 !important;
+  margin-left: auto !important;
+  margin-right: auto !important;
+  border-color: #707070 !important; }
+
 @media (min-width: 1080px) {
   .wallpaper {
     justify-content: space-between; }
   .wallpaper__cell {
     height: auto;
     width: 25%;
-    padding: 0 4px 0 0; } }
+    padding: 0 4px 0 0; }
+  .price__card {
+    width: 24% !important; } }
 
 .btn {
   width: 110px;
