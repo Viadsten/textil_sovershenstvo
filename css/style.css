@@ -333,8 +333,12 @@
 .instagram-link--hover {
   position: absolute;
   color: #fff;
-  top: -24px;
-  right: 0;
+  bottom: 10px;
+  right: 10px;
+  font-size: 17px;
+  font-weight: 300;
+  text-align: right;
+  text-transform: uppercase;
   opacity: 0;
   transition: .2s; }
 
@@ -542,19 +546,19 @@
 .price__cost {
   font-size: 25px;
   text-align: center;
-  margin: 20px 0; }
+  margin: 15px 0; }
 
 .price__hr {
   width: 90%;
   border: none;
-  margin: 20px auto;
+  margin: 15px auto;
   height: 1px;
   background-color: #f0f0f0; }
 
 .price__card-descr {
   width: 90%;
   margin: 0 auto;
-  line-height: 27px;
+  line-height: 24px;
   color: #666; }
 
 @media (min-width: 500px) {
@@ -563,7 +567,7 @@
     justify-content: space-between;
     flex-wrap: wrap; }
   .price__card {
-    padding-bottom: 25px;
+    padding-bottom: 15px;
     margin-bottom: 10px;
     width: 45%; } }
 
