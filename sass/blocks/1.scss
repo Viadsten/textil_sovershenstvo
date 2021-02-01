@@ -244,6 +244,7 @@
 }
 .SPB__card h4{
   font-size: 20px;
+  letter-spacing: -0.04em;
   font-weight: 400;
   text-align: left;
 }
@@ -540,6 +541,7 @@
 }
 
 .btn{
+  outline: none !important;
   width: 110px;
   text-align: center;
   border-radius: 5px;
