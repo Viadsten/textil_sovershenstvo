@@ -18,7 +18,7 @@
     line-height: 40px;
     text-align: center;
     line-height: 45px;
-    font-weight: 300;
+    font-weight: 400;
     color: #fff;
     text-transform: uppercase;
     font-size: 43px;
@@ -34,7 +34,7 @@
 }
 .hello__text-item{
   font-size: 16px;
-  font-weight: 300;
+  font-weight: 400;
   margin-top: 5px;
   list-style-type: none;
 }
@@ -96,7 +96,7 @@
 }
 
 .hello__text{
-  font-weight: 300;
+  font-weight: 400;
   font-size: 16px;
   line-height: 22px;
   color: #313131;
@@ -130,7 +130,7 @@
   color: #5d6979;
   font-size: 15px;
   line-height: 20px;
-  font-weight: 300;
+  font-weight: 400;
  /* margin: 0 5% 20px 10%;*/
 }
 
@@ -244,7 +244,7 @@
 }
 .SPB__card h4{
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: left;
 }
 .SPB__card{
@@ -262,7 +262,7 @@
 @media (min-width: 700px){
   .you-tube{
       margin-bottom: 150px;
-      margin-top: 64px;
+      margin-top: 55px;
   }
   .you-tube__item{
       width: 49%;
@@ -287,15 +287,17 @@
 }
 .more-text{
   color: #fff;
-  font-weight: 300;
+  font-weight: 400;
   max-width: 1240px;
+  text-align: center;
+  line-height: 22px;
   margin: 10px auto;
 }
 .hello__text--adv{
   font-size: 17px;
   margin-bottom: 10px;
   white-space: pre-wrap;
-  font-weight: 300;
+  font-weight: 400;
 }
 .hello__text-wrp--adv{
   padding: 20px 10px;
@@ -303,7 +305,7 @@
 
 .SPB__card-title{
   color: #333;
-  font-weight: 300;
+  font-weight: 400;
   font-size: 17px;
   margin: 15px 8px;
 
@@ -320,7 +322,7 @@
 
 @media (min-width:550px){
   .hello__h2{
-    font-weight: 300;
+    font-weight: 400;
       font-size: 29px;
       margin: 70px 0 -30px;
       color: #fff;
@@ -350,12 +352,19 @@
       margin: 5px auto;
   }
   .SPB__card-wrp{
-    margin: 60px auto;
+    margin: 60px auto 0;
       padding: 0 10px;
   }
 }
 
+.wlp-cell-js{
+  max-height: 100%;
+}
 
+.wp-cell-js-hide{
+  max-height: 0px;
+  transition: max-height .2s;
+}
 
 /*--------WALLPAPER----------*/
 
@@ -366,28 +375,46 @@
 }
 
 .wallpaper__cell{
+  transition: max-height .2s;
   height: auto;
   position: relative;
   text-align: center;
+
+}
+
+.wallpaper__cell-after{
+  &:after{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    content: '';
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #000000, $alpha: 0.3);
+  }
 }
 .wallpaper__img{
+  transition: max-height .2s;
   width: 100%;
+  max-height: 100%;
   height: auto;
 }
 
 .wallpaper__text{
+  text-transform: uppercase;
   position: absolute;
   left: 50%;
-  letter-spacing: -0.03em;
+  letter-spacing: 0em;
+  width: 100%;
   top: 50%;
+  z-index: 5;
   text-align: center;
-  line-height: 40px;
-  font-weight: 300;
-  font-size: 25px;
-  color: #000;
+  line-height: 30px;
+  font-weight: 400;
+  font-size: 23px;
+  color: #fff;
   transform: translate(-50%, -50%);
 }
-
 @media (min-width:460px){
   .wallpaper{
       max-width: 1240px;
@@ -419,7 +446,7 @@
   bottom: 10px;
   right: 10px;
   font-size: 17px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: right;
   text-transform: uppercase;
   opacity: 0;
@@ -427,20 +454,47 @@
 }
 .categoria-ban-img-wrp{
   position: relative;
+  display: inline-block;
+  transition: .4s ease-in;
+  overflow: hidden;
+  width: 49%;
+  &:after{
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.1);
+  }
+  img{
+    width: 100% !important;
+    height: auto !important;
+    max-width: 100% !important;
+  }
   &:hover{
+    &:after{
+      //opacity: 1;
+    }
     .categoria-banner-text{
       opacity: 1;
     }
+    img{
+      transform: scale(1.05);
+    }
+
   }
 }
 .categoria-banner-text{
   position: absolute;
   color: #fff;
-  top: -25px;
+  bottom: 25px;
+  z-index: 5;
   right: 20px;
   text-transform: uppercase;
-  font-weight: 300;
-  font-size: 22px;
+  font-weight: 400;
+  font-size: 26px;
   transition: .2s;
   opacity: 0;
 }
@@ -459,11 +513,14 @@
   }
 }
 .price__btn{
-  display: block;
-  width: 170px !important;
+  display: inline-block;
+  width: auto !important;
+  padding: 0 4px;
+  margin-top: -4px !important;
   background-color: #fff !important;
   color: #313131 !important;
   margin-left: auto !important;
+  font-size: 13px !important;
   margin-right: auto !important;
   border-color: #707070 !important;
 }
@@ -535,7 +592,7 @@
   color: #313131;
   text-decoration: none;
   line-height: 35px;
-  width: 170px;
+  width: 185px;
   color: #a0784b;
 }
 
@@ -548,7 +605,7 @@
 
 .gift{
   width: 100%;
-  height: 500px;
+  height: 600px;
   max-width: 1240px;
   margin: 0 auto;
   margin-bottom: 60px;
@@ -566,7 +623,7 @@
 
 .gift__descr{
   line-height: 30px;
-  font-size: 23px;
+  font-size: 25px;
   padding: 42px 0;
   width: 100%;
   text-transform: uppercase;
@@ -600,7 +657,7 @@
 .gift__button{
   display: block;
   width: 130px;
-  margin: 20px auto;
+  margin: 10px auto;
   background-color: rgba(255,255,255,.1);
   color: rgba(255,255,255,.7);
   background-clip: padding-box;
@@ -623,13 +680,38 @@
       margin-left: 50%;
   }
 }
-
+.gift__body{
+  padding: 10px 20px  15px 15px;
+  background-image: url('../img/gift-bg.jpg');
+  background-position-y: 45%;
+  background-position-x: 75%;
+  background-size: 300%;
+  margin-bottom: 50px;
+  input{
+    margin-bottom: 15px;
+  }
+  label{
+    margin-bottom: 5px;
+  }
+}
 .examples__descr{
   font-size: 20px;
   line-height: 24px;
   text-align: center;
 }
-
+.gift__button{
+  margin: 0;
+  margin-left: 50%;
+  border-radius: 2px;
+}
+.gift__smal-p{
+  color: rgba(255, 255, 255, 0.65);
+  width: 120%;
+}
+.gift__descr{
+  padding-bottom: 30px;
+  padding-top: 45px;
+}
 .exc-descr{
   font-size: 20px;
   padding: 15px 0 0 0;
@@ -673,9 +755,11 @@
 }
 
 .price__cost{
-  font-size: 25px;
-  text-align: center;
-  margin: 15px 0;
+  display: inline-block;
+  padding-left: 15px;
+  font-size: 23px;
+  margin: 10px 0 0;
+  line-height: 30px;
 }
 
 .price__hr{
@@ -689,7 +773,7 @@
 .price__card-descr{
   width: 90%;
   margin: 0 auto;
-  line-height: 24px;
+  line-height: 22px;
   color: #666;
 }
 
@@ -724,7 +808,7 @@
 @media (min-width: 1080px){
   .price{
       max-width: 1240px;
-      margin: 60px auto;
+      margin: 0px auto;
       padding: 0 0px;
   }
   .price__card{
@@ -774,7 +858,7 @@
 .hello__h2--partners{
   text-align: center;
   font-size: 30px;
-  font-weight: 300;
+  font-weight: 400;
   text-transform: unset;
 }
 
@@ -862,7 +946,7 @@
     display: flex;
     align-items: center;
     max-width: 1240px;
-    margin: 20px auto 60px;
+    margin: 20px auto 10px;
     p{
       margin-right: 20px;
     }
