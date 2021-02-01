@@ -286,7 +286,7 @@
     width: 24%;
     margin: 5px auto; }
   .SPB__card-wrp {
-    margin: 60px auto 0;
+    margin: 55px auto 0;
     padding: 0 10px; } }
 
 .wlp-cell-js {
@@ -340,7 +340,7 @@
 @media (min-width: 460px) {
   .wallpaper {
     max-width: 1240px;
-    margin: 60px auto 0;
+    margin: 55px auto 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between; }
@@ -403,7 +403,7 @@
   opacity: 0; }
 
 .categoria-banner {
-  margin-top: 75px !important; }
+  margin-top: 55px !important; }
 
 @media (min-width: 720px) {
   .wallpaper {
@@ -617,7 +617,7 @@
 
 .price__cost {
   display: inline-block;
-  padding-left: 15px;
+  padding-left: 8px;
   font-size: 23px;
   margin: 10px 0 0;
   line-height: 30px; }
@@ -630,9 +630,9 @@
   background-color: #f0f0f0; }
 
 .price__card-descr {
-  width: 90%;
+  width: 92%;
   margin: 0 auto;
-  line-height: 22px;
+  line-height: 19px;
   color: #666; }
 
 @media (min-width: 500px) {
