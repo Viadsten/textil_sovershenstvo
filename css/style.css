@@ -4,6 +4,7 @@
   background-color: #171e26; }
 
 .head-wp {
+  display: block;
   width: 100%;
   position: relative;
   margin-bottom: 20px; }
@@ -78,9 +79,9 @@
   flex-wrap: wrap; }
 
 .hello__photo-wrp img {
-  width: 48%;
-  margin-bottom: 2%;
-  height: 48%; }
+  width: 49%;
+  margin-bottom: 0%;
+  height: 49%; }
 
 .hello__text {
   font-weight: 400;
@@ -239,8 +240,9 @@
   margin: 10px auto; }
 
 .hello__text--adv {
-  font-size: 17px;
-  margin-bottom: 10px;
+  font-size: 18px;
+  margin-bottom: 0px;
+  line-height: 23px;
   white-space: pre-wrap;
   font-weight: 400; }
 
